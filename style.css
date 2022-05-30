@@ -5,56 +5,112 @@ body {
   min-height: 100%;
 }
 
-.face{
-    position:absolute;
-    background: blue;
-    width: 350px;
-    height: 350px;
-    border-radius: 100%;
-    top: 150px;
-    left: 150px;
+.face {
+  position: absolute;
+  background: blue;
+  width: 350px;
+  height: 300px;
+  border-radius: 100%;
+  top: 150px;
+  left: 150px;
+  box-shadow: inset 0px 0px 40px black;
 }
 
-.ears{
-    display:flex;
-    align-items: stretch;
-    gap:30px;
-    margin-top: -45px;
+.ears {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: -45px;
 }
 
-.ear1,.ear2{
-    display : inline-block;
-    height : 0;
-    width : 0;
-    border-right : 60px solid transparent;
-    border-bottom : 100px solid black;
-    border-left : 60px solid transparent;
-    margin: auto;
+.ear1,
+.ear2 {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  margin: auto;
 }
 
-.ear1{
-    transform: rotate(-145deg);
+.ear1 {
+  transform: rotate(-143deg);
 }
-.ear2{
-    transform: rotate(145deg);
-}
-.eyes{
-    display:flex;
-    align-content: space-evenly;
-    margin-top: 50px;
-    row-gap: 10px;
+.ear2 {
+  transform: rotate(143deg);
 }
 
-.eye1,.eye2{
-    background: white;
-    width: 70px;
-    height: 50px;
-    margin:auto;
-    border-radius: 100%;
+.innerEar1,
+.innerEar2 {
+  margin: auto;
+  display: inline-block;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-bottom: 50px solid indianred;
 }
 
+.innerEar1 {
+  transform: rotate(-130deg);
+}
 
+.innerEar2 {
+  transform: rotate(130deg);
+}
 
+.eyes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+}
 
+.eye1,
+.eye2 {
+  background: green;
+  width: 70px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 10px black;
+}
 
+.pupil {
+  background: black;
+  margin: auto;
+  height: 50px;
+  width: 20px;
+  border-radius: 100%;
+}
+.reflect {
+  height: 7px;
+  width: 7px;
+  background: wheat;
+  border-radius: -50%;
+  float: right;
+  margin-top: 12px;
+}
 
+.nose {
+  height: 0;
+  width: 0;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid indianred;
+  border-left: 30px solid transparent;
+  margin: 25px auto auto auto;
+  transform: rotate(180deg);
+}
+
+.cheeksMouth {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.cheekL,
+.cheekR {
+  background: wheat;
+  height: 100px;
+  width: 120px;
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 10px black;
+}
