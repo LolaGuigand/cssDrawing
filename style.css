@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  background: yellow;
+  min-height: 100%;
+}
+
+.face{
+    position:absolute;
+    background: blue;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    top: 150px;
+    left: 150px;
+}
+
+.ears{
+    display:flex;
+    align-items: stretch;
+    gap:30px;
+    margin-top: -45px;
+}
+
+.ear1,.ear2{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 60px solid transparent;
+    border-bottom : 100px solid black;
+    border-left : 60px solid transparent;
+    margin: auto;
+}
+
+.ear1{
+    transform: rotate(-145deg);
+}
+.ear2{
+    transform: rotate(145deg);
+}
+.eyes{
+    display:flex;
+    align-content: space-evenly;
+    margin-top: 50px;
+    row-gap: 10px;
+}
+
+.eye1,.eye2{
+    background: white;
+    width: 70px;
+    height: 50px;
+    margin:auto;
+    border-radius: 100%;
+}
+
+
+
+
+
+
