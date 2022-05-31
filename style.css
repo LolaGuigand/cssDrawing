@@ -76,6 +76,27 @@ body {
   box-shadow: inset 0px 0px 10px black;
 }
 
+.lashes,
+.downlashes {
+  width: 70px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  z-index: 0;
+  position: absolute;
+}
+.lash1,
+.lash2,
+.lash3,
+.lash4 {
+  width: 2px;
+  height: 15px;
+  margin-top: -15px;
+  border-radius: 15% 60% 35% 80%;
+  background: black;
+}
+
 .pupil {
   background: black;
   margin: auto;
@@ -98,8 +119,21 @@ body {
   visibility: collapse;
 }
 
-.eyelid, .eyelidR{
-  position:absolute;
+.dlash1,
+.dlash2,
+.dlash3,
+.dlash4 {
+  visibility: collapse;
+  width: 2px;
+  height: 15px;
+  margin-top: 50px;
+  border-radius: 15% 60% 35% 80%;
+  background: black;
+}
+
+.eyelid,
+.eyelidR {
+  position: absolute;
   z-index: 0;
   width: 70px;
   height: 50px;
@@ -107,10 +141,10 @@ body {
   border-radius: 100%;
   border-bottom: 2px solid black;
 }
-.eyelid{
-  margin-right:120px;
+.eyelid {
+  margin-right: 120px;
 }
-.eyelidR{
+.eyelidR {
   margin-left: 120px;
 }
 
@@ -124,10 +158,41 @@ body {
   transform: rotate(180deg);
 }
 
+@keyframes pinchNose {
+  from {
+    border-bottom-color: palevioletred;
+  }
+  to {
+    border-bottom-color: red;
+  }
+}
+
+/* The element to apply the animation to */
+.nose:hover {
+  animation-name: pinchNose;
+  animation-duration: 2s;
+}
+
+.nostrils {
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.nostril1,
+.nostril2 {
+  margin-top: 5px;
+  height: 8px;
+  width: 1.5px;
+  background: black;
+  border-radius: 80%95%15%30%;
+}
 .cheeksMouth {
   display: flex;
   justify-content: center;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .cheekL,
@@ -137,4 +202,68 @@ body {
   width: 120px;
   border-radius: 100%;
   box-shadow: inset 0px 0px 10px black;
+  border-bottom: 5px solid black;
+}
+.freckles{
+  margin-left:10px;
+}
+.freckle1,
+.freckle2,
+.freckle3 {
+  height: 4px;
+  width: 4px;
+  background: black;
+  border-radius: 100%;
+}
+
+.freckle1 {
+  margin: 45px 70px 35px 35px;
+}
+
+.freckle2 {
+  margin: -45px 35px 38px 45px;
+}
+
+.freckle3 {
+  margin: -30px 40px 35px 55px;
+}
+.stachesL{
+  width: 60px;
+  height: 50px;
+  margin-top:30px;
+  margin-left:-120px;
+  position: fixed;
+}
+
+.stachesR{
+  width: 60px;
+  height: 50px;
+  margin-top:30px;
+  margin-left:80px;
+  position: fixed;
+}
+
+.stache1, .stache2, .stache3{
+  width: 160px;
+  height: 3px;
+  background: black;
+  box-shadow: inset 2px grey;
+  margin-top:8px;
+  border-radius: 90% 0% 60% 15%;
+}
+
+.stacheR1, .stacheR2, .stacheR3{
+  width: 160px;
+  height: 3px;
+  background: black;
+  box-shadow: inset 2px grey;
+  margin-top:8px;
+  border-radius: 60% 15% 90% 0%;
+}
+
+.stache1, .stacheR3{
+  transform: rotate(5deg);
+}
+.stache3, .stacheR1{
+  transform: rotate(-5deg);
 }
