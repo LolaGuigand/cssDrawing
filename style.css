@@ -7,7 +7,7 @@ body {
 
 .face {
   position: absolute;
-  background: blue;
+  background: #1b65b8;
   width: 350px;
   height: 300px;
   border-radius: 100%;
@@ -32,6 +32,7 @@ body {
   border-bottom: 100px solid black;
   border-left: 60px solid transparent;
   margin: auto;
+  z-index: 0;
 }
 
 .ear1 {
@@ -40,24 +41,26 @@ body {
 .ear2 {
   transform: rotate(143deg);
 }
-/*
+
 .innerEar1,
 .innerEar2 {
-  margin: auto;
+  z-index: 50;
+  position: fixed;
   display: inline-block;
   border-right: 30px solid transparent;
   border-left: 30px solid transparent;
-  border-bottom: 50px solid indianred;
+  border-bottom: 50px solid #ba728b;
 }
 
 .innerEar1 {
-  transform: rotate(-130deg);
+  margin-left: -40px;
+  margin-top: 33px;
 }
 
 .innerEar2 {
-  transform: rotate(130deg);
+  margin-top: 37px;
+  margin-left: -16px;
 }
-*/
 
 .eyes {
   display: flex;
@@ -68,7 +71,7 @@ body {
 
 .eye1,
 .eye2 {
-  background: green;
+  background: #237e10;
   z-index: 50;
   width: 70px;
   height: 50px;
@@ -151,16 +154,20 @@ body {
 .nose {
   height: 0;
   width: 0;
+
   border-right: 30px solid transparent;
-  border-bottom: 30px solid indianred;
   border-left: 30px solid transparent;
+  border-bottom-width: 30px;
+  border-bottom-style: solid;
+  border-bottom-color: #ba728b;
+  border-radius: 100%;
   margin: 25px auto auto auto;
   transform: rotate(180deg);
 }
 
 @keyframes pinchNose {
   from {
-    border-bottom-color: palevioletred;
+    border-bottom-color: #ba728b;
   }
   to {
     border-bottom-color: red;
@@ -204,8 +211,8 @@ body {
   box-shadow: inset 0px 0px 10px black;
   border-bottom: 5px solid black;
 }
-.freckles{
-  margin-left:10px;
+.freckles {
+  margin-left: 10px;
 }
 .freckle1,
 .freckle2,
@@ -227,43 +234,68 @@ body {
 .freckle3 {
   margin: -30px 40px 35px 55px;
 }
-.stachesL{
+.stachesL {
   width: 60px;
   height: 50px;
-  margin-top:30px;
-  margin-left:-120px;
+  margin-top: 30px;
+  margin-left: -120px;
   position: fixed;
 }
 
-.stachesR{
+.stachesR {
   width: 60px;
   height: 50px;
-  margin-top:30px;
-  margin-left:80px;
+  margin-top: 30px;
+  margin-left: 80px;
   position: fixed;
 }
 
-.stache1, .stache2, .stache3{
+.stache1,
+.stache2,
+.stache3 {
   width: 160px;
   height: 3px;
   background: black;
   box-shadow: inset 2px grey;
-  margin-top:8px;
+  margin-top: 8px;
   border-radius: 90% 0% 60% 15%;
 }
 
-.stacheR1, .stacheR2, .stacheR3{
+.stacheR1,
+.stacheR2,
+.stacheR3 {
   width: 160px;
   height: 3px;
   background: black;
   box-shadow: inset 2px grey;
-  margin-top:8px;
+  margin-top: 8px;
   border-radius: 60% 15% 90% 0%;
 }
 
-.stache1, .stacheR3{
+.stache1,
+.stacheR3 {
   transform: rotate(5deg);
 }
-.stache3, .stacheR1{
+.stache3,
+.stacheR1 {
   transform: rotate(-5deg);
+}
+
+.stripes{
+  position:absolute;
+  display:flex;
+  align-content: strecth;
+  justify-content:center;
+  gap:200px;
+  width: 350px;
+  height: 200px;
+  margin-top:100px;
+}
+
+.stripe1, .stripe2,.stripe3, .stripeR1, .stripeR2, .stripeR3{
+  border-left:35px solid transparent;
+  border-right:35px solid transparent;
+  border-bottom: 15px solid black;
+  margin-top:5px;
+
 }
