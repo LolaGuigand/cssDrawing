@@ -4,15 +4,22 @@ body {
   background: yellow;
   min-height: 100%;
 }
+.cat{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 .face {
   position: absolute;
+  margin: auto;
   background: #1b65b8;
   width: 350px;
   height: 300px;
   border-radius: 100%;
-  top: 150px;
-  left: 150px;
   box-shadow: inset 0px 0px 40px black;
 }
 
@@ -281,21 +288,25 @@ body {
   transform: rotate(-5deg);
 }
 
-.stripes{
-  position:absolute;
-  display:flex;
+.stripes {
+  position: absolute;
+  display: flex;
   align-content: strecth;
-  justify-content:center;
-  gap:200px;
+  justify-content: center;
+  gap: 200px;
   width: 350px;
   height: 200px;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
-.stripe1, .stripe2,.stripe3, .stripeR1, .stripeR2, .stripeR3{
-  border-left:35px solid transparent;
-  border-right:35px solid transparent;
+.stripe1,
+.stripe2,
+.stripe3,
+.stripeR1,
+.stripeR2,
+.stripeR3 {
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
   border-bottom: 15px solid black;
-  margin-top:5px;
-
+  margin-top: 5px;
 }
